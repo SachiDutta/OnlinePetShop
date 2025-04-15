@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Lavender E-Commerce</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f0ff; /* Lighter lavender background */
+            color: #5a189a; /* Softer indigo text */
+        }
+
+        /* Header */
+        header {
+            background-color: #e0bfff; /* Softer lavender */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            color: #5a189a;
+        }
+
+        /* Navigation Bar */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #5a189a; /* Lavender text */
+            background-color: white; /* White button */
+            border: 2px solid #9d4edd; /* Lavender border */
+            padding: 10px 25px;
+            margin: 5px;
+            border-radius: 20px; /* Rounded-pill shape */
+            transition: all 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background-color: #9d4edd; /* Lavender background */
+            color: white; /* White text */
+            transform: scale(1.1); /* Slight pop-up */
+        }
+
+        /* Featured Section */
+        .featured {
+            background-color: #e0bfff;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .featured h2 {
+            font-size: 2em;
+            color: #5a189a;
+        }
+        .featured p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .featured button {
+            padding: 10px 25px;
+            background-color: #5a189a;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .featured button:hover {
+            background-color: #9d4edd;
+        }
+
+        /* Categories Section */
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .category {
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .category img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .category h3 {
+            margin: 10px 0;
+            color: #5a189a;
+        }
+
+        /* Product Showcase */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px); /* Lift the card */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover img {
+            transform: scale(1.1); /* Zoom effect */
+        }
+        .product-card h3 {
+            margin: 10px 0 5px;
+            color: #5a189a;
+        }
+        .product-card p {
+            color: #666;
+        }
+        .product-card button {
+            padding: 10px 25px;
+            background-color: white; /* Default: White */
+            color: #9d4edd; /* Default: Lavender text */
+            border: 2px solid #9d4edd; /* Lavender border */
+            border-radius: 20px; /* Rounded-pill shape */
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .product-card button:hover {
+            background-color: #9d4edd; /* Hover: Lavender background */
+            color: white; /* Hover: White text */
+            transform: scale(1.1); /* Slight pop-up */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #b46fed;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Shop For More Pets</h1>
+    </header>
+
+    <!-- Navigation -->
+   
+<nav>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</nav>
+    <!-- Featured Section -->
+    <section class="featured">
+        <p>Discover your pets!!</p>
+    </section>
+
+    <!-- Product Showcase -->
+    <section id="products" class="products">
+        <div class="product-card">
+            <img src="./images/turtle.jpg" alt="Product 1">
+            <h3>Turtles</h3>
+            <p>"Adopt a calm, shelled companion—perfect for a serene lifestyle!"</p>
+            <button>Explore Now !</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/cow.jpg" alt="Product 2">
+            <h3>Cows</h3>
+            <p>"Bring home the coolness with our cutsie calm charmer!"</p>
+            <button>Explore Now !</button>
+        </div>
+    </section>
+    <section id="products" class="products">
+      <div class="product-card">
+          <img src="./images/fish.jpg" alt="Product 1">
+          <h3>Fishes</h3>
+          <p>"Add color to your life with vibrant, mesmerizing aquatic friends!"</p>
+          <button>Explore Now !</button>
+      </div>
+      <div class="product-card">
+          <img src="./images/duck.jpg" alt="Product 2">
+          <h3>Ducks</h3>
+          <p>"Quack up your day with this lovable feathered water companion!"</p>
+          <button>Explore Now !</button>
+      </div>
+  </section>
+  <section id="products" class="products">
+    <div class="product-card">
+        <img src="./images/snake.jpg" alt="Product 1">
+        <h3>Snakes</h3>
+        <p>Ssss-slide into a lifelong friendship with our scaly friends are hiss-terically friends to have around!</p>
+        <button>Explore Now !</button>
+    </div>
+    <div class="product-card">
+        <img src="./images/hamster.jpeg" alt="Product 2">
+        <h3>Hamster</h3>
+        <p>the best things in life come in small, furry packages! Tiny paws, big adventures—our hamsters are full of love and energy! </p>
+        <button>Explore Now !</button>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Fluffy Puff, All rights reserved.</p>
+    </footer>
+</body>
+</html>
