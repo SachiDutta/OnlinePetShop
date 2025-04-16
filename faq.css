@@ -1,4 +1,4 @@
-/* General Body Styling */
+/* General Body Styling... */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -8,7 +8,7 @@ body {
     padding: 20px;
 }
 
-/* FAQ Section */
+/* FAQ Section... */
 .faq {
     max-width: 800px;
     margin: 0 auto;
@@ -19,7 +19,7 @@ body {
     overflow: hidden;
 }
 
-/* FAQ Heading */
+/* FAQ Heading... */
 .faq h1 {
     font-size: 2.5rem;
     color: #d63384;
@@ -27,14 +27,14 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* FAQ Item */
+/* FAQ Item... */
 .faq-item {
     margin: 15px 0;
     border-bottom: 1px solid #ffd1dc;
     padding: 10px 0;
 }
 
-/* FAQ Questions */
+/* FAQ Questions... */
 .faq-question {
     background: #ffd1dc;
     border: none;
@@ -56,7 +56,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* FAQ Answers */
+/* FAQ Answers... */
 .faq-answer {
     display: none;
     margin-top: 10px;
@@ -65,7 +65,7 @@ body {
     color: #4a1f3d;
 }
 
-/* FAQ Open Styling */
+/* FAQ Open Styling... */
 .faq-item.active .faq-answer {
     display: block;
     animation: fadeIn 0.5s ease-in-out;
