@@ -91,7 +91,7 @@ input:valid ~ label
 
 p
 {
-    text-align: center;
+    text-align: left;
     color: #fff;
     margin: 10px 0;
 }
