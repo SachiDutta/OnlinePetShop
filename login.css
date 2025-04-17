@@ -136,3 +136,12 @@ p>a:hover
 .form-group {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+/* Floating Label effect*/
+input:focus ~ label,
+input:valid ~ label {
+    top: -10px;
+    font-size: 1em;
+    color: #ffe;
+    transition: 0.3s ease-out;
+}
