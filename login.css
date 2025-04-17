@@ -146,15 +146,3 @@ input:valid ~ label {
     transition: 0.3s ease-out;
 }
 
-/**Improveing button styling*/
-#btn {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
-    color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-#btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
