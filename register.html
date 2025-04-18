@@ -173,6 +173,25 @@
                   input.classList.remove('invalid');
                   errorElement.textContent = '';
               }
+                /*Password Strength indicator*/
+            password.addEventListener('input', () => {
+    const value = password.value.trim();
+    const strengthIndicator = document.createElement('div');
+    strengthIndicator.className = 'password-strength';
+    if (!document.querySelector('.password-strength')) {
+        password.parentElement.appendChild(strengthIndicator);
+    }
+    if (value.length < 6) {
+        strengthIndicator.textContent = "Weak";
+        strengthIndicator.className = "password-strength strength-weak";
+    } else if (value.length < 10) {
+        strengthIndicator.textContent = "Medium";
+        strengthIndicator.className = "password-strength strength-medium";
+    } else {
+        strengthIndicator.textContent = "Strong";
+        strengthIndicator.className = "password-strength strength-strong";
+    }
+});
           </script>
       </body>
       </html>
