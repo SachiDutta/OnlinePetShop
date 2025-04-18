@@ -12,10 +12,12 @@ function showModal(dogName, dogPrice) {
     modalPrice.innerText = dogPrice;
     modal.style.display = 'flex'; // Show the modal
 }
+
 // Function to close the modal
 function closeModal() {
     modal.style.display = 'none'; // Hide the modal
 }
+
 // Handle the "Buy Now" button click event
 const buyNowButtons = document.querySelectorAll('.buy-now-btn');
 buyNowButtons.forEach((button) => {
@@ -31,6 +33,7 @@ buyNowButtons.forEach((button) => {
         showModal(dogName, dogPrice);
     });
 });
+
 // Confirm booking - Add dog to cart
 confirmBookingBtn.addEventListener('click', () => {
     // Store the selected dog in local storage (cart)
@@ -45,6 +48,7 @@ confirmBookingBtn.addEventListener('click', () => {
     updateCartCount();
     closeModal(); // Close the modal after confirming the booking
 });
+
 
 // Cancel booking - Close the modal
 cancelBookingBtn.addEventListener('click', closeModal);
