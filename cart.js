@@ -6,7 +6,6 @@ function updateCartCount() {
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     cartCount.innerText = cartItems.length;
 }
-
 // Function to show modal when clicking "Buy Now" button
 function showModal(dogName, dogPrice) {
     modalDogName.innerText = dogName;
