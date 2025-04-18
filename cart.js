@@ -1,11 +1,13 @@
 // Get the modal and cart elements
 const cartCount = document.getElementById('cart-count');
 
+
 // Update the cart count (both in index and cart page)
 function updateCartCount() {
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     cartCount.innerText = cartItems.length;
 }
+
 // Function to show modal when clicking "Buy Now" button
 function showModal(dogName, dogPrice) {
     modalDogName.innerText = dogName;
@@ -17,6 +19,7 @@ function showModal(dogName, dogPrice) {
 function closeModal() {
     modal.style.display = 'none'; // Hide the modal
 }
+
 
 // Handle the "Buy Now" button click event
 const buyNowButtons = document.querySelectorAll('.buy-now-btn');
@@ -49,6 +52,7 @@ confirmBookingBtn.addEventListener('click', () => {
 
     closeModal(); // Close the modal after confirming the booking
 });
+
 
 // Cancel booking - Close the modal
 cancelBookingBtn.addEventListener('click', closeModal);
