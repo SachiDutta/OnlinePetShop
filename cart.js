@@ -13,7 +13,8 @@ function showModal(dogName, dogPrice) {
     modal.style.display = 'flex'; // Show the modal
 }
 
-// Function to close the modal
+
+// Function to close the modal  
 function closeModal() {
     modal.style.display = 'none'; // Hide the modal
 }
@@ -29,10 +30,12 @@ buyNowButtons.forEach((button) => {
         selectedDogName = dogName;
         selectedDogPrice = dogPrice;
 
+        
         // Show the modal with selected dog details
         showModal(dogName, dogPrice);
     });
 });
+
 
 // Confirm booking - Add dog to cart
 confirmBookingBtn.addEventListener('click', () => {
@@ -50,14 +53,15 @@ confirmBookingBtn.addEventListener('click', () => {
 });
 
 
+
 // Cancel booking - Close the modal
 cancelBookingBtn.addEventListener('click', closeModal);
+
 
 // Load cart items on cart page
 window.addEventListener('load', () => {
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     const cartContainer = document.querySelector('.cart-items-container');
-
     if (cartItems.length === 0) {
         cartContainer.innerHTML = '<p>Your cart is empty</p>';
     } else {
