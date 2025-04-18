@@ -191,6 +191,16 @@
         strengthIndicator.textContent = "Strong";
         strengthIndicator.className = "password-strength strength-strong";
     }
+
+    /*Save form data locally*/
+    form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    if ([validateUsername(), validateEmail(), validatePassword(), validateConfirmPassword()].every(Boolean)) {
+        localStorage.setItem('username', username.value.trim());
+        localStorage.setItem('email', email.value.trim());
+        alert("Form Data Saved Locally");
+    }
+});
 });
           </script>
       </body>
