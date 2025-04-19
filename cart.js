@@ -74,7 +74,9 @@ window.addEventListener('load', () => {
     const cartContainer = document.querySelector('.cart-items-container');
     if (cartItems.length === 0) {
         cartContainer.innerHTML = '<p>Your cart is empty</p>';
-    } else {
+    }
+        
+    else {
         cartItems.forEach(item => {
             const itemElement = document.createElement('div');
             itemElement.classList.add('cart-item');
@@ -82,6 +84,7 @@ window.addEventListener('load', () => {
                 <p><strong>Name:</strong> ${item.name}</p>
                 <p><strong>Price:</strong> $${item.price}</p>
             `;
+            
             cartContainer.appendChild(itemElement);
         });
         
