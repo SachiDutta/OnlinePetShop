@@ -8,7 +8,6 @@ function updateCartCount() {
     cartCount.innerText = cartItems.length;
 }
 
-
 // Function to show modal when clicking "Buy Now" button
 function showModal(dogName, dogPrice) {
     modalDogName.innerText = dogName;
@@ -19,7 +18,7 @@ function showModal(dogName, dogPrice) {
 
 // Function to close the modal  
 function closeModal() {
-    modal.style.display = 'none'; // Hide the modal
+    modal.style.display = 'none';   // Hide the modal
 }
 
 
@@ -29,7 +28,7 @@ buyNowButtons.forEach((button) => {
     button.addEventListener('click', () => {
         const dogCard = button.closest('.dog-card');
         const dogName = dogCard.querySelector('.dog-details em').innerText;
-        const dogPrice = dogCard.querySelector('.dog-details p').innerText.includes('months') ? 100 : 200; // Placeholder price logic
+        const dogPrice = dogCard.querySelector('.dog-details p').innerText.includes('months') ? 100 : 200;  // Placeholder price logic
 
         selectedDogName = dogName;
         selectedDogPrice = dogPrice;
@@ -39,7 +38,6 @@ buyNowButtons.forEach((button) => {
         showModal(dogName, dogPrice);
     });
 });
-
 
 // Confirm booking - Add dog to cart
 confirmBookingBtn.addEventListener('click', () => {
@@ -56,11 +54,8 @@ confirmBookingBtn.addEventListener('click', () => {
     closeModal(); // Close the modal after confirming the booking
 });
 
-
-
 // Cancel booking - Close the modal
 cancelBookingBtn.addEventListener('click', closeModal);
-
 
 // Load cart items on cart page
 window.addEventListener('load', () => {
