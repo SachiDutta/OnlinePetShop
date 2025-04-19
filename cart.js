@@ -30,7 +30,6 @@ buyNowButtons.forEach((button) => {
         const dogCard = button.closest('.dog-card');
         const dogName = dogCard.querySelector('.dog-details em').innerText;
         const dogPrice = dogCard.querySelector('.dog-details p').innerText.includes('months') ? 100 : 200;  // Placeholder price logic
-
         selectedDogName = dogName;
         selectedDogPrice = dogPrice;
 
@@ -38,8 +37,12 @@ buyNowButtons.forEach((button) => {
         
         // Show the modal with selected dog details
         showModal(dogName, dogPrice);
+        
     });
+    
 });
+
+
 
 
 // Confirm booking - Add dog to cart
@@ -49,7 +52,9 @@ confirmBookingBtn.addEventListener('click', () => {
     cartItems.push({
         name: selectedDogName,
         price: selectedDogPrice
+        
     });
+    
     localStorage.setItem('cart', JSON.stringify(cartItems));
 
     
@@ -79,5 +84,7 @@ window.addEventListener('load', () => {
             `;
             cartContainer.appendChild(itemElement);
         });
+        
     }
+    
 });
