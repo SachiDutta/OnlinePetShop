@@ -8,7 +8,6 @@ const reviews = [
 function renderReviews() {
     const reviewsContainer = document.getElementById('reviews');
     reviewsContainer.innerHTML = ''; // Clear previous reviews
-
     reviews.forEach(review => {
         const reviewDiv = document.createElement('div');
         reviewDiv.classList.add('review');
