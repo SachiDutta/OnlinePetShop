@@ -11,8 +11,6 @@ document.querySelectorAll('.buy-now-btn').forEach(button => {
         document.getElementById('confirmation-modal').style.display = 'flex';
     });
 });
-
-
 // Handle confirmation
 document.getElementById('confirm-booking').addEventListener('click', function() {
     // Increment cart count
