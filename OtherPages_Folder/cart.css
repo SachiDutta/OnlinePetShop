@@ -6,26 +6,21 @@ body {
     padding: 0;
     text-align: center;
 }
-
-
 .cart-header {
     background: #f776e1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: #fff;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .cart-header h2 {
     font-size: 2rem;
     margin: 0;
 }
-
 .header-cart {
     position: absolute;
     right: 20px;
     top: 20px;
 }
-
 .header-action-btn {
     background: none;
     border: none;
@@ -33,22 +28,19 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
 }
-
 .header-action-btn:hover {
     color: #f3c1ff;
 }
-
 .btn-badge {
     background: #f0e68c;
     color: #4a1f3d;
     border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 0.8rem;
+   
     margin-left: 5px;
+     padding: 5px 10px;
+    font-size: 0.8rem;
 }
-
-
-.cart {
+.cart{
     margin: 30px auto;
     max-width: 900px;
     background: #fff;
@@ -60,17 +52,19 @@ body {
 .cart-items-container {
     display: flex;
     flex-wrap: wrap;
+    
     gap: 20px;
     justify-content: center;
 }
+.cart-item{
+    background: ;
 
-.cart-item {
-    background: #f8f4ff;
     border: 2px solid #d4a5ed;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
+    
     flex-direction: column;
     align-items: center;
     padding: 15px;
@@ -86,16 +80,17 @@ body {
 
 .cart-item-details {
     text-align: center;
-    margin-top: 10px;
+    
+    margin-top: 11px;
 }
 
 .cart-item-details h3 {
     margin: 10px 0 5px;
     color: #ad0da8;
 }
-
-.cart-item-details p {
+.cart-item-details  p {
     margin: 5px 0;
+    
     font-size: 0.9rem;
     color: #4a1f3d;
 }
@@ -114,8 +109,6 @@ body {
 .remove-item-btn:hover {
     background: #f76dd9;
 }
-
-
 .cart-summary {
     margin-top: 30px;
     text-align: center;
@@ -124,17 +117,14 @@ body {
     border-radius: 10px;
     border: 2px solid #fec0e3;
 }
-
-.cart-summary h3 {
+.cart-summary h4 {
     color: #9e1b7d;
     margin-bottom: 20px;
-}
 
 .cart-summary p {
     margin: 10px 0;
     font-size: 1rem;
 }
-
 .checkout-btn {
     background: #f562ba;
     border: none;
