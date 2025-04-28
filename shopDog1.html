@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="modal.css">
+    <title>Lavender E-Commerce</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f0ff; /* Lighter lavender background */
+            color: #5a189a; /* Softer indigo text */
+        }
+        
+        /* Header */
+        header {
+            background-color: #e0bfff; /* Softer lavender */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        
+            
+        
+        }.header-cart {
+    position: fixed; /* Stays in the top-right corner */
+    top: 20px;       /* Space from the top */
+    right: 20px;     /* Align to the right */
+    z-index: 1000;   /* Make sure it's above other content */
+}
+
+.header-action-btn {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #161616; /* Matches the theme */
+    cursor: pointer;
+    outline: none;
+}
+
+.header-action-btn:hover {
+    color: #111111; /* Slightly lighter hover effect */
+}
+
+.btn-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #121112; /* Light pink to match theme */
+    color: #f9f7fb;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 3px 7px;
+    line-height: 1;
+}
+        
+        header h1 {
+            margin: 0;
+            color: #5a189a;
+        }
+
+        /* Navigation Bar */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #5a189a; /* Lavender text */
+            background-color: white; /* White button */
+            border: 2px solid #9d4edd; /* Lavender border */
+            padding: 10px 25px;
+            margin: 5px;
+            border-radius: 20px; /* Rounded-pill shape */
+            transition: all 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background-color: #9d4edd; /* Lavender background */
+            color: white; /* White text */
+            transform: scale(1.1); /* Slight pop-up */
+        }
+
+        /* Product Grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px); /* Lift the card */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        /* Product Card Images */
+        .product-card img {
+    width: 100%; /* Ensures it spans the card width */
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures the image is cropped proportionally */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+        
+        .product-card:hover img {
+            transform: scale(1.1); /* Zoom effect */
+        }
+        .product-card h3 {
+            margin: 10px 0 5px;
+            color: #5a189a;
+        }
+        .product-card p {
+            color: #666;
+        }
+        .product-card button {
+            padding: 10px 25px;
+            background-color: white; /* Default: White */
+            color: #9d4edd; /* Default: Lavender text */
+            border: 2px solid #9d4edd; /* Lavender border */
+            border-radius: 20px; /* Rounded-pill shape */
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .product-card button:hover {
+            background-color: #9d4edd; /* Hover: Lavender background */
+            color: white; /* Hover: White text */
+            transform: scale(1.1); /* Slight pop-up */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #b46fed;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-cart">
+            <button class="header-action-btn" aria-label="home" title="home" onclick="window.location.href = 'cart.html'">
+                <ion-icon name="home-outline" aria-hidden="true"></ion-icon>
+                <span id="cart-count" class="btn-badge">0</span>
+            </button>
+           
+        </div>
+        <h1>FEATURED PETS - DOGS</h1>
+    </header>
+
+    <!-- Navigation -->
+    
+
+    <!-- Product Section -->
+    <section id="products" class="products">
+        <div class="product-card">
+            <img src="./images/shopDog1.jpg" alt="Product 1">
+            <h3>Labrador</h3>
+            <p>"Your loyal sunshine—always ready to brighten your days with endless love, warmth, and unwavering companionship."</p>
+            <p><strong>COST : 10,000</strong></p>
+            <button class="buy-now-btn"data-name="Velly" >Book Now</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/shopDog2.jpeg" alt="Product 2">
+            <h3>German Shepherd</h3>
+            <p>"Boundless energy, a heart of gold, and cuddles for days—your perfect family companion awaits!"</p>
+            <p><strong>COST : 12,000</strong></p>
+            <button class="buy-now-btn" data-name="bruzo">Book Now</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/shopDog3.jpeg" alt="Product 3">
+            <h3>Golden Retriever</h3>
+            <p>"A protector, a best friend, and a heart full of devotion—all in one majestic package."</p>
+            <p><strong>COST : 13,999</strong></p>
+            <button class="buy-now-btn">Book Now</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/shopDog4.jpeg" alt="Product 4">
+            <h3>French Bulldog</h3>
+            <p>"Small in size but big in love—this curious companion will fill your home with laughter and joy."</p>
+            <p><strong>COST : 10,000</strong></p>
+            <button class="buy-now-btn">Book Now</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/shopDog5.jpg" alt="Product 5">
+            <h3>Bulldog</h3>
+            <p>"Elegance meets affection in this intelligent, hypoallergenic bundle of snuggles and everlasting charm."</p>
+            <p><strong>COST : 16,000</strong></p>
+            <button class="buy-now-btn">Book Now</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/shopDog6.jpg" alt="Product 6">
+            <h3>Beagle</h3>
+            <p>"Wrinkly smiles, gentle souls, and unconditional love—your cozy, forever friend is waiting for you."</p>
+            <p><strong>COST : 9000</strong></p>
+            <button class="buy-now-btn">Book Now</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/shopDog7.jpg" alt="Product 6">
+            <h3>Product 7</h3>
+            <p>"Wrinkly smiles, gentle souls, and unconditional love—your cozy, forever friend is waiting for you."</p>
+            <p><strong>COST : 10,000</strong></p>
+            <button class="buy-now-btn">Book Now</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/shopDog8.jpg" alt="Product 6">
+            <h3>Product 8</h3>
+            <p>"Wrinkly smiles, gentle souls, and unconditional love—your cozy, forever friend is waiting for you."</p>
+            <p><strong>COST : 20,000</strong></p>
+            <button class="buy-now-btn">Book Now</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/shopDog9.jpg" alt="Product 6">
+            <h3>Product 9</h3>
+            <p>"Wrinkly smiles, gentle souls, and unconditional love—your cozy, forever friend is waiting for you."</p>
+            <p><strong>COST : 13,500</strong></p>
+            <button class="buy-now-btn">Book Now</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/shopDog10.jpg" alt="Product 6">
+            <h3>Product 10</h3>
+            <p>"Wrinkly smiles, gentle souls, and unconditional love—your cozy, forever friend is waiting for you."</p>
+            <p><strong>COST : 10,000</strong></p>
+            <button class="buy-now-btn">Book Now</button>
+        </div>
+    </section>
+    <div class="modal" id="confirmation-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p>Confirm Your Booking</p>
+            </div>
+            <p id="modal-message">Are you sure you want to book ?<span id="modal-dog-name"></span></p>
+                
+            <p><span id="modal-price"></span></p>
+            <div class="modal-footer">
+                <button class="modal-btn confirm-btn" id="confirm-booking">Confirm</button>
+                <button class="modal-btn cancel-btn" id="cancel-booking">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Fluffy Puff, All rights reserved.</p>
+    </footer>
+    <script src="modal.js"></script> 
+
+</body>
+</html>
