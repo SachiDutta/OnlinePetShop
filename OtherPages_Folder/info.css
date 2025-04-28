@@ -19,27 +19,25 @@ p, li {
 .header {
     background-color: #ffccdd; /* Light pink header background */
     text-align: center;
-    padding: 40px 20px;
     border-bottom: 5px solid #d1476d; /* Accent border */
+    padding: 40px 20px;
 }
 
 .header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
-
 .header p {
     font-size: 1.2em;
 }
-
 /* Main content styles */
 .main-content {
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background: #ffffff; /* White box for better readability */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff; /* White box for better readability */
 }
 
 section {
@@ -76,7 +74,8 @@ ul li::before {
     text-align: center;
     padding: 20px;
     background-color: #ffccdd;
-    color: #4a4a4a;
     margin-top: 20px;
     font-size: 0.9em;
+    color: #4a4a4a;
+    
 }
