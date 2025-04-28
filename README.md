@@ -2,23 +2,24 @@
 <h1>Project :  Online Pet Shop <img src="https://media.tenor.com/CtS0MGYRI6wAAAAi/animals.gif" width="60px" height="60px"> </h1>
 <u></u>
 
- Project Overview
+ Project Overview 
 
 > This project is simply based on an online pet shop website where anyone can browse, learn, and choose their pets.
-
 
 ## Features
 - Home page with pet categories
 - JavaScript-based interactive UI
 - CSS styling for better design
 
+ <img src="https://media.tenor.com/758Gv67dfSgAAAAi/cute-snug.gif" width="60px" height="60px"> 
+
   
-## Setup Instructions <img src="https://media1.tenor.com/m/RfB1-BRZORQAAAAC/saku-saku-monster.gif" width="60px" height="60px"> 
+## Setup Instructions
 1. Clone the repository
 2. Open `index.html` in your browser
 
 
-## The ss of the interface :
+## The ss of the interface :  
 ![image](https://github.com/user-attachments/assets/1b442126-3d47-4444-b555-8b73c2eab68c)
 
 ![image](https://github.com/user-attachments/assets/cdbacafe-8e0c-4b65-9939-14451f8ef6a6)
