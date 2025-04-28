@@ -6,10 +6,16 @@
 
 > This project is simply based on an online pet shop website where anyone can browse, learn, and choose their pets.
 
+
 ## Features
 - Home page with pet categories
 - JavaScript-based interactive UI
 - CSS styling for better design
+
+  
+## Setup Instructions
+1. Clone the repository
+2. Open `index.html` in your browser
 
 
 ## The ss of the interface :
@@ -20,7 +26,4 @@
 ![image](https://github.com/user-attachments/assets/ae556b16-5552-45b2-be75-3dfb5fbd85b2)
 
 
-## Setup Instructions
-1. Clone the repository
-2. Open `index.html` in your browser
 
