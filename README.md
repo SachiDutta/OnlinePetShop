@@ -1,5 +1,5 @@
 
-<h1>Project :  Online Pet Shop <img src="https://media.tenor.com/sTRIJIgIh2gAAAAi/bun-hop-transparent-bunny.gif" width="60px" height="60px"> </h1>
+<h1>Project :  Online Pet Shop <img src="https://media.tenor.com/CtS0MGYRI6wAAAAi/animals.gif" width="60px" height="60px"> </h1>
 <u></u>
 
  Project Overview
