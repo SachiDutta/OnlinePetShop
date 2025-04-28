@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="modal.css">
     <title>Lavender E-Commerce</title>
     <style>
+        /* Header */
+        header{
+            background-color: #e0bfff; /* Softer lavender */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
         /* General styling */
         body {
             font-family: 'Arial', sans-serif;
@@ -16,23 +23,16 @@
             background-color: #f7f0ff; /* Lighter lavender background */
             color: #5a189a; /* Softer indigo text */
         }
+
+
+
         
-        /* Header */
-        header {
-            background-color: #e0bfff; /* Softer lavender */
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        
-            
-        
-        }.header-cart {
+ .header-cart{
     position: fixed; /* Stays in the top-right corner */
     top: 20px;       /* Space from the top */
     right: 20px;     /* Align to the right */
     z-index: 1000;   /* Make sure it's above other content */
-}
-
+        }
 .header-action-btn {
     position: relative;
     background: none;
@@ -43,10 +43,12 @@
     outline: none;
 }
 
+
+
+        
 .header-action-btn:hover {
     color: #111111; /* Slightly lighter hover effect */
 }
-
 .btn-badge {
     position: absolute;
     top: -5px;
@@ -59,12 +61,14 @@
     padding: 3px 7px;
     line-height: 1;
 }
+
+
         
-        header h1 {
+  header h1 {
             margin: 0;
+      
             color: #5a189a;
         }
-
         /* Navigation Bar */
         nav {
             text-align: center;
@@ -86,6 +90,8 @@
             transform: scale(1.1); /* Slight pop-up */
         }
 
+
+        
         /* Product Grid */
         .products {
             display: grid;
@@ -102,6 +108,11 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s, box-shadow 0.2s;
         }
+
+
+
+
+        
         .product-card:hover {
             transform: translateY(-5px); /* Lift the card */
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -114,18 +125,26 @@
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
-
-        
-        .product-card:hover img {
+    .product-card:hover img {
             transform: scale(1.1); /* Zoom effect */
         }
+
+
+        
         .product-card h3 {
             margin: 10px 0 5px;
             color: #5a189a;
         }
+
+
+
+        
         .product-card p {
             color: #666;
         }
+
+
+        
         .product-card button {
             padding: 10px 25px;
             background-color: white; /* Default: White */
@@ -140,7 +159,6 @@
             color: white; /* Hover: White text */
             transform: scale(1.1); /* Slight pop-up */
         }
-
         /* Footer */
         footer {
             background-color: #b46fed;
@@ -149,9 +167,6 @@
             padding: 15px 0;
             margin-top: 20px;
         }
-       
-
-
     </style>
 </head>
 <body>

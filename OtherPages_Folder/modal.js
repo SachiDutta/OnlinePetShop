@@ -11,6 +11,7 @@ document.querySelectorAll('.buy-now-btn').forEach(button => {
         document.getElementById('confirmation-modal').style.display = 'flex';
     });
 });
+
 // Handle confirmation
 document.getElementById('confirm-booking').addEventListener('click', function() {
     // Increment cart count
@@ -19,6 +20,7 @@ document.getElementById('confirm-booking').addEventListener('click', function() 
     // Close the modal
     document.getElementById('confirmation-modal').style.display = 'none';
 });
+
 // Handle cancel
 document.getElementById('cancel-booking').addEventListener('click', function() {
     // Close the modal
