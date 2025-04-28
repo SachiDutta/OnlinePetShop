@@ -13,7 +13,7 @@
 - CSS styling for better design
 
   
-## Setup Instructions
+## Setup Instructions <img src="https://media1.tenor.com/m/RfB1-BRZORQAAAAC/saku-saku-monster.gif" width="60px" height="60px"> 
 1. Clone the repository
 2. Open `index.html` in your browser
 
