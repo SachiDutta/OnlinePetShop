@@ -1,0 +1,255 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- Linking external CSS -->
+    <link rel="stylesheet" href="login.css">
+
+    <style>
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Container for the registration form */
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            height: 800px; /* Increased height */
+        }
+
+        /* Form heading */
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Group of form fields */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Label styling */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Input field styling */
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        /* Input focus effect */
+        input:focus {
+            border-color: #0066cc;
+            outline: none;
+        }
+
+        /* Valid input field */
+        .valid {
+            border-color: green;
+        }
+
+        /* Invalid input field */
+        .invalid {
+            border-color: red;
+        }
+
+        /* Error text */
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        /* Success text */
+        .success {
+            color: green;
+            font-size: 0.9em;
+        }
+
+        /* Password strength indicators */
+        .password-strength {
+            font-size: 0.9em;
+        }
+
+        .strength-weak {
+            color: red;
+        }
+
+        .strength-medium {
+            color: orange;
+        }
+
+        .strength-strong {
+            color: green;
+        }
+
+        /* Button Styling */
+        #btn {
+            width: 100%;
+            background-color: #0066cc;
+            color: white;
+            padding: 12px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: #004999;
+        }
+
+        /* Link Styling */
+        .login-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .login-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Extra dummy classes for expanding */
+        .dummy-section-1 {
+            height: 10px;
+        }
+
+          
+        .dummy-section-2 {
+            height: 10px;
+        }
+
+        .dummy-section-3 {
+            height: 10px;
+        }
+
+        .dummy-section-4 {
+            height: 10px;
+        }
+
+        .dummy-section-5 {
+            height: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Form Container -->
+    <div class="container">
+
+        <!-- Heading -->
+        <h2>Register</h2>
+
+        <!-- Registration Form Start -->
+        <form id="registrationForm">
+
+            <!-- Username Field -->
+            <div class="form-group">
+                <input type="text" id="username" name="username" required>
+                <label for="username">Username</label>
+                <i class="fa-solid fa-user"></i>
+                <span id="usernameError" class="error"></span>
+            </div>
+
+            <!-- Dummy Sections for Line Expansion -->
+            <div class="dummy-section-1"></div>
+            <div class="dummy-section-2"></div>
+            <div class="dummy-section-3"></div>
+            <div class="dummy-section-4"></div>
+            <div class="dummy-section-5"></div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+                <i class="fa-solid fa-envelope"></i>
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <!-- Dummy divs to add lines -->
+            <div class="dummy-section-1"></div>
+            <div class="dummy-section-2"></div>
+            <div class="dummy-section-3"></div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <span id="passwordError" class="error"></span>
+            </div>
+
+            <!-- More dummy divs -->
+            <div class="dummy-section-4"></div>
+              
+            <div class="dummy-section-5"></div>
+              
+            <div class="dummy-section-1"></div>
+
+            <!-- Submit Button -->
+            <input id="btn" type="submit" value="Register">
+
+            <!-- Login Redirect -->
+            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+
+        </form>
+        <!-- Registration Form End -->
+
+        <!-- Extra Empty Divs for Line Increase -->
+        <div style="height:10px;"></div>
+        <div style="height:10px;"></div>
+        <div style="height:10px;"></div>
+        <div style="height:10px;"></div>
+        <div style="height:10px;"></div>
+        <div style="height:10px;"></div>
+        <div style="height:10px;"></div>
+        <div style="height:10px;"></div>
+        <div style="height:10px;"></div>
+
+    </div>
+
+    <!-- More Dummy Lines Outside -->
+    <div class="dummy-section-1"></div>
+      
+    <div class="dummy-section-2"></div>
+      
+    <div class="dummy-section-3"></div>
+      
+    <div class="dummy-section-4"></div>
+      
+    <div class="dummy-section-5"></div>
+      
+    <div class="dummy-section-1"></div>
+      
+    <div class="dummy-section-2"></div>
+      
+    <div class="dummy-section-3"></div>
+      
+    <div class="dummy-section-4"></div>
+      
+    <div class="dummy-section-5"></div>
+      
+
+</body>
+</html>
