@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+
+
+
+
 /* Cart Header */
 .cart-header {
     background: #f776e1;
@@ -15,10 +19,19 @@ body {
     padding: 20px;
 }
 
+
+
+
+
+
 .cart-header h2 {
     font-size: 2rem;
     margin: 0;
 }
+
+
+
+
 
 /* Header Cart Icon */
 .header-cart {
@@ -26,6 +39,10 @@ body {
     right: 20px;
     top: 20px;
 }
+
+
+
+
 
 .header-action-btn {
     background: none;
@@ -35,9 +52,15 @@ body {
     cursor: pointer;
 }
 
+
+
+
+
 .header-action-btn:hover {
     color: #f3c1ff;
 }
+
+
 
 /* Cart Badge */
 .btn-badge {
@@ -49,6 +72,8 @@ body {
     font-size: 0.8rem;
 }
 
+
+
 /* Cart Main Section */
 .cart {
     margin: 30px auto;
@@ -59,6 +84,9 @@ body {
     padding: 20px;
 }
 
+
+
+
 /* Cart Items Container */
 .cart-items-container {
     display: flex;
@@ -66,6 +94,9 @@ body {
     gap: 20px;
     justify-content: center;
 }
+
+
+
 
 /* Individual Cart Item */
 .cart-item {
@@ -89,22 +120,33 @@ body {
     border-bottom: 2px solid #d4a5ed;
 }
 
+
+
+
 /* Cart Item Details */
 .cart-item-details {
     text-align: center;
     margin-top: 11px;
 }
 
+
+
+
 .cart-item-details h3 {
     margin: 10px 0 5px;
     color: #ad0da8;
 }
+
+
+
 
 .cart-item-details p {
     margin: 5px 0;
     font-size: 0.9rem;
     color: #4a1f3d;
 }
+
+
 
 /* Remove Item Button */
 .remove-item-btn {
@@ -118,9 +160,16 @@ body {
     transition: background 0.3s ease;
 }
 
+
+
+
+
 .remove-item-btn:hover {
     background: #f76dd9;
 }
+
+
+
 
 /* Cart Summary */
 .cart-summary {
@@ -132,6 +181,9 @@ body {
     border: 2px solid #fec0e3;
 }
 
+
+
+
 .cart-summary h4 {
     color: #9e1b7d;
     margin-bottom: 20px;
@@ -141,6 +193,8 @@ body {
     margin: 10px 0;
     font-size: 1rem;
 }
+
+
 
 /* Checkout Button */
 .checkout-btn {
@@ -154,6 +208,15 @@ body {
     transition: background 0.3s ease;
 }
 
+
+
+
+
+
+
 .checkout-btn:hover {
     background: #4a1f3d;
 }
+
+
+
