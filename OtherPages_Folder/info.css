@@ -1,0 +1,81 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6f0; /* Light pink background */
+    color: #4a4a4a;
+}
+
+h1, h2 {
+    color: #d1476d; /* Deep pink for headers */
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+/* Header styles */
+.header {
+    background-color: #ffccdd; /* Light pink header background */
+    text-align: center;
+    border-bottom: 5px solid #d1476d; /* Accent border */
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.header p {
+    font-size: 1.2em;
+}
+/* Main content styles */
+.main-content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff; /* White box for better readability */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff99b5; /* Light pink border for sections */
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: "🐾"; /* Paw print as bullet */
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffccdd;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #4a4a4a;
+    
+}

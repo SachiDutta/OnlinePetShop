@@ -1,67 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Page</title>
-    <link rel="stylesheet" href="review.css">
+
+
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Page</title>
+  <link rel="stylesheet" href="review.css">
+
 </head>
 <body>
+
+
     
-    <header>
-        <h1>Fluffy Puff Review</h1>
-    </header>
+  <header>
+    <h1>Fluffy Puff Review</h1>
+  </header>
 
-    <!-- Review Section -->
-    <div class="container">
-        <!-- Heading with Background Image -->
-        <section class="review-heading">
-            <h2>Share Your Experience</h2>
-        </section>
 
-        <!-- Review Form Section -->
-        <section class="review-form">
-            <h2>Write a Review</h2>
-            <form id="reviewForm">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" required placeholder="Enter your name">
+    
+  <!-- Review Section -->
+  <div class="container">
 
-                <label for="rating">Rating:</label>
-                <div id="ratingStars">
-                    <span class="star" data-value="1">★</span>
-                    <span class="star" data-value="2">★</span>
-                    <span class="star" data-value="3">★</span>
-                    <span class="star" data-value="4">★</span>
-                    <span class="star" data-value="5">★</span>
-                </div>
 
-                <label for="comment">Comment:</label>
-                <textarea id="comment" required placeholder="Write your review here"></textarea>
+      
+    <!-- Heading with Background Image -->
+    <section class="review-heading">
+      <h2>Share Your Experience</h2>
+    </section>
 
-                <button type="submit">Submit Review</button>
-            </form>
-        </section>
 
-        <!-- Customer Reviews Section -->
-        <section class="reviews-section">
-            <h2>Customer Reviews</h2>
-            <div id="reviews"></div>
-        </section>
-    </div>
+      
+    <!-- Review Form Section -->
+    <section class="review-form">
 
-    <footer>
-        <p>&copy; 2024 fluffypuff</p>
-    </footer>
+      <h2>Write a Review</h2>
 
-    <!-- Popup Modal -->
-    <div id="thankYouModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeModal">&times;</span>
-            <h2>Thanks for the Review!</h2>
-            <p>Your review has been submitted successfully.</p>
+      <form id="reviewForm">
+
+        <label for="name">
+          Your Name:
+        </label>
+
+        <input 
+          type="text" 
+          id="name" 
+          required 
+          placeholder="Enter your name"
+        >
+
+        <label for="rating">
+          Rating:
+        </label>
+
+        <div id="ratingStars">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
         </div>
+
+        <label for="comment">
+          Comment:
+        </label>
+
+        <textarea 
+          id="comment" 
+          required 
+          placeholder="Write your review here"
+        ></textarea>
+
+        <button type="submit">
+          Submit Review
+        </button>
+
+      </form>
+
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section">
+
+      <h2>Customer Reviews</h2>
+
+      <div id="reviews"></div>
+
+    </section>
+
+  </div>
+
+  <footer>
+      
+    <p>&copy; 2024 FluffyPuff</p>
+      
+  </footer>
+
+  <!-- Popup Modal -->
+  <div id="thankYouModal" class="modal">
+
+    <div class="modal-content">
+
+      <span class="close-btn" id="closeModal">
+        &times;
+      </span>
+
+      <h2>Thanks for the Review!</h2>
+
+      <p>Your review has been submitted successfully.</p>
+
     </div>
 
-    <script src="review.js"></script>
+  </div>
+
+  <script src="review.js"></script>
+
 </body>
+
 </html>

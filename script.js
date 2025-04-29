@@ -3,7 +3,7 @@
 
 
 /**
- * add event on element
+ * add the event on element
  */
 
 const addEventOnElem = function (elem, type, callback) {
